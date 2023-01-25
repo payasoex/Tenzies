@@ -1,5 +1,6 @@
 import React from "react"
 import Die from "./Die"
+import Time from "./Time"
 import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
 
@@ -72,6 +73,7 @@ export default function App() {
             <div className="dice-container">
                 {diceElements}
             </div>
+            <Time />
             <button 
                 className="roll-dice" 
                 onClick={rollDice}
