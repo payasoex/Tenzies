@@ -1,6 +1,5 @@
 import React from "react"
 import Die from "./Die"
-import Time from "./Time"
 import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
 
@@ -68,17 +67,16 @@ export default function App() {
         <main>
             {tenzies && <Confetti />}
             <h1 className="title">Tenzies</h1>
-            <p className="instructions">Roll until all dice are the same. 
-            Click each die to freeze it at its current value between rolls.</p>
+            <p className="instructions">Tira los dados hasta que todos sean iguales. 
+            Clickea en cada dado para congelar su valor actual entre tiradas.</p>
             <div className="dice-container">
                 {diceElements}
             </div>
-            <Time />
             <button 
                 className="roll-dice" 
                 onClick={rollDice}
             >
-                {tenzies ? "New Game" : "Roll"}
+                {tenzies ? "Nuevo Juego" : "Tirar"}
             </button>
         </main>
     )
