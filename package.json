@@ -1,7 +1,6 @@
 {
   "name": "tenzies",
   "private": true,
-  "homepage": "http://payasoex.github.io/tenzies",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
